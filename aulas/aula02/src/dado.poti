@@ -1,6 +1,6 @@
 tipo Dado
   lados: Inteiro
-  var valor_ := 1
+  var valor_ := aleatório(1, 6)
   lançar()
     valor_ := aleatório(1, lados)
   fim
