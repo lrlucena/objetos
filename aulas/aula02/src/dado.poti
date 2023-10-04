@@ -1,0 +1,23 @@
+tipo Dado
+  lados: Inteiro
+  var valor_ := 1
+  lançar()
+    valor_ := aleatório(1, lados)
+  fim
+  valor()
+    retorne valor_
+  fim
+fim
+
+dado1 = Dado(6)
+a = dado1.valor
+escreva a
+dado1.lançar
+b = dado1.valor
+escreva b
+dado2 = Dado(6)
+dado2.lançar
+c = dado2.valor
+escreva c
+escreva "Dado1 = {dado1.valor} e Dado2 = {dado2.valor}.
+        | A soma é {dado1.valor + dado2.valor}"
