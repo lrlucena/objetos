@@ -1,0 +1,33 @@
+# Adaptação do Código de Tomasz Wegrzanowski
+# https://dev.to/taw/100-languages-speedrun-episode-85-linguagem-potigol-3829
+
+tipo Termo
+  _palavras = Arquivo.leia("palavras.txt")
+  palavra = aleatorio(_palavras)
+
+  verifique(acho : Texto)
+    var blocos = ""
+    para número de 1 até 5 faça
+      se acho[número] == palavra[número]
+        blocos := blocos + "🟩"
+      senãose palavra.contem(acho[número])
+        blocos := blocos + "🟨"
+      senão
+        blocos := blocos + "⬛"
+      fim
+    fim
+    retorne blocos
+  fim
+fim
+
+termo = Termo()
+
+var acho := ""
+enquanto acho <> termo.palavra faça
+  acho := leia_texto
+  se acho.tamanho == 5
+    escreva termo.verifique(acho)
+  senão
+    escreva "palavra deve ter 5 caracteres"
+  fim
+fim
