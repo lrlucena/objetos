@@ -1,0 +1,27 @@
+tipo Calculadora
+    var _valor = 0.0
+
+    valor() = _valor
+    
+    somar(a: Real)
+      _valor := _valor + a
+    fim
+    
+    subtrair(a: Real)
+      _valor := _valor - a
+    fim
+    
+    multiplicar(a: Real)
+      _valor := _valor * a
+    fim
+    
+    dividir(a: Real)
+      _valor := _valor / a
+    fim
+fim
+
+calc = Calculadora()
+calc.somar(10)
+calc.dividir(2)
+calc.multiplicar(3)
+escreva calc.valor
