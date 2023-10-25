@@ -1,0 +1,9 @@
+{
+    "files.watcherExclude": {
+        "**/target": true
+    },
+    "java.project.sourcePaths": [
+        "aulas/aula03/dado",
+        ""
+    ]
+}
