@@ -1,3 +1,5 @@
+import java.util.Date;
+
 public class Agenda {
   private Compromisso[] compromissos;
   private int tamanho;
@@ -31,5 +33,20 @@ public class Agenda {
     }
     this.compromissos[quantidade] = c;
     quantidade++;
+  }
+
+  public void inserir(String assunto, String local, Date data) {
+    Compromisso c = new Compromisso(assunto, local, data);
+    inserir(c);
+  }
+
+  public void excluir(Compromisso c) {
+    for (int i = 0; i < this.quantidade; i++){
+        if (compromissos[i] == c) {
+            this.quantidade -= 1;
+            compromissos[i] = compromissos[this.quantidade];
+            compromissos[this.quantidade] = null;
+        }
+    }
   }
 }
