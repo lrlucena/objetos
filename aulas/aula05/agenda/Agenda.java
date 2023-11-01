@@ -49,4 +49,8 @@ public class Agenda {
         }
     }
   }
+
+  public Compromisso[] listar() {
+    return this.compromissos;  // .clone()
+  }
 }
