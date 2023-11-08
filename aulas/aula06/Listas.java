@@ -1,3 +1,5 @@
+package aulas.aula06;
+
 import java.util.*;
 
 public class Listas {
