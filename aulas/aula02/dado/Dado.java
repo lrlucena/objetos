@@ -1,3 +1,5 @@
+package aulas.aula02.dado;
+
 public class Dado {
     private int lados = 6;
     private int _valor = 1;
